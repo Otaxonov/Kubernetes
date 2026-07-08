@@ -17,3 +17,12 @@ spec:
         cpu: "500m"
     ports:
       - containerPort: 80
+
+    volumeMounts:
+      - name: nginx-storage
+        mountPath: /data
+
+  volumes:
+    - name: nginx-storage
+      persistentVolumeClaim:
+        claimName: nginx-pvc
