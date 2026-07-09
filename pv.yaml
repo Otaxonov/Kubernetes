@@ -10,4 +10,4 @@ spec:
     - ReadWriteOnce
   persistentVolumeReclaimPolicy: Retain
   hostPath:
-    path: /home/cyberspace/DevOps/Kubernetes/data
+    path: /home/cyberspace/DevOps/Kubernetes/data/nginx
